@@ -28,6 +28,11 @@
       "multiply",
       "parse",
       "random"
-    ]
+    ],
+    "testsUrl": "https://travis-ci.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
   }
 }
