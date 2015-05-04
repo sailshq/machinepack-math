@@ -25,7 +25,8 @@
       "add",
       "divide",
       "subtract",
-      "multiply"
+      "multiply",
+      "parse"
     ]
   }
 }
