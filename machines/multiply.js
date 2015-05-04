@@ -1,10 +1,10 @@
 module.exports = {
 
 
-  friendlyName: 'Add (+)',
+  friendlyName: 'Multiply (✕)',
 
 
-  description: 'Add two numbers together and return the sum.',
+  description: 'Multiply two numbers and return the product.',
 
 
   sync: true,
@@ -25,25 +25,26 @@ module.exports = {
     b: {
       friendlyName: 'Second number',
       description: 'The second number.',
-      example: 2.2,
+      example: -10,
       required: true
     }
+
   },
 
 
   exits: {
 
     success: {
-      description: 'Returns the sum (a + b)',
-      variableName: 'sum',
-      example: 4.2
+      description: 'Returns the product (a ✕ b)',
+      variableName: 'product',
+      example: -20
     }
 
   },
 
 
   fn: function(inputs, exits) {
-    return exits.success(inputs.a + inputs.b);
+    return exits.success(inputs.a*inputs.b);
   }
 
 

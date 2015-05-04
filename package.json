@@ -22,7 +22,10 @@
     "friendlyName": "Math",
     "machineDir": "machines/",
     "machines": [
-      "add"
+      "add",
+      "divide",
+      "subtract",
+      "multiply"
     ]
   }
 }
