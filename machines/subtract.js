@@ -16,14 +16,14 @@ module.exports = {
   inputs: {
 
     a: {
-      friendlyName: 'First number',
+      friendlyName: 'Minuend (first number)',
       description: 'The number to subtract from.',
       example: -20,
       required: true
     },
 
     b: {
-      friendlyName: 'Second number',
+      friendlyName: 'Subtrahend (second number)',
       description: 'The number to subtract.',
       example: 2.2,
       required: true

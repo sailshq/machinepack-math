@@ -16,14 +16,14 @@ module.exports = {
   inputs: {
 
     a: {
-      friendlyName: 'First number',
+      friendlyName: 'Multiplicand (first number)',
       description: 'The first number.',
       example: 2,
       required: true
     },
 
     b: {
-      friendlyName: 'Second number',
+      friendlyName: 'Multiplier (second number)',
       description: 'The second number.',
       example: -10,
       required: true

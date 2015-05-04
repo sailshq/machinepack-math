@@ -19,14 +19,14 @@ module.exports = {
   inputs: {
 
     a: {
-      friendlyName: 'Numerator',
+      friendlyName: 'Numerator (first number)',
       description: 'The number to divide (aka "dividend")',
       example: 5,
       required: true
     },
 
     b: {
-      friendlyName: 'Denominator',
+      friendlyName: 'Denominator (second number)',
       description: 'The number to divide by (aka "divisor")',
       example: -2,
       required: true
