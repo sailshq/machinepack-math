@@ -16,14 +16,14 @@ module.exports = {
       friendlyName: 'At least (>=)',
       example: 1,
       description: 'The minimum acceptable number to generate',
-      required: true
+      defaultsTo: 0
     },
 
     max: {
       friendlyName: 'No greater than (<=)',
       example: 1,
       description: 'The maximum acceptable number to generate',
-      required: true
+      defaultsTo: 1
     },
 
     floating: {
