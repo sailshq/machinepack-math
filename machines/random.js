@@ -40,7 +40,7 @@ module.exports = {
 
     success: {
       example: 1,
-      friendlyName: 'then',
+      variableName: 'randomNum',
       description: 'OK.'
     }
 
