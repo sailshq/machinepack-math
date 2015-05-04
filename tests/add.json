@@ -5,6 +5,30 @@
       "todo": true,
       "using": {},
       "outcome": "success"
+    },
+    {
+      "using": {
+        "a": "1",
+        "b": "1"
+      },
+      "outcome": "success",
+      "returns": "2"
+    },
+    {
+      "using": {
+        "a": "1",
+        "b": "1.5"
+      },
+      "outcome": "success",
+      "returns": "2.5"
+    },
+    {
+      "using": {
+        "a": "1",
+        "b": "-1.5001"
+      },
+      "outcome": "success",
+      "returns": "-0.5001"
     }
   ]
 }
