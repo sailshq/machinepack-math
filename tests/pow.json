@@ -2,11 +2,6 @@
   "machine": "pow",
   "expectations": [
     {
-      "todo": true,
-      "using": {},
-      "outcome": "success"
-    },
-    {
       "using": {
         "number": "64",
         "exponent": "0.5"
@@ -53,6 +48,14 @@
       },
       "outcome": "imaginary",
       "returns": "2.8284271247461903"
+    },
+    {
+      "using": {
+        "number": "2",
+        "exponent": "3"
+      },
+      "outcome": "success",
+      "returns": "8"
     }
   ]
 }
