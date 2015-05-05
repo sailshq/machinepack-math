@@ -34,7 +34,7 @@ module.exports = {
       friendlyName: 'imaginary',
       variableName: 'imaginaryFactor',
       example: 8,
-      description: 'Returns a multiple of √-1 that would represent the √ of the provided number.',
+      description: 'Returns a number which, if multiplied by √-1, would represent the √ of the provided number.',
       extendedDescription: 'Cannot calculate a real result for the square root of a negative number.'
     },
 

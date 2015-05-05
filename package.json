@@ -30,7 +30,8 @@
       "random",
       "e",
       "sqrt",
-      "pi"
+      "pi",
+      "pow"
     ],
     "testsUrl": "https://travis-ci.org/"
   },
