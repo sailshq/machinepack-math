@@ -2,11 +2,6 @@
   "machine": "divide",
   "expectations": [
     {
-      "todo": true,
-      "using": {},
-      "outcome": "success"
-    },
-    {
       "using": {
         "a": "10",
         "b": "2"
