@@ -8,7 +8,7 @@
 Harness the power of math.
 
 
-## Installation &nbsp; [![NPM version](https://badge.fury.io/js/machinepack-math.svg)](http://badge.fury.io/js/machinepack-math) [![Build Status](https://travis-ci.org/mikermcneil/machinepack-math.png?branch=master)](https://travis-ci.org/mikermcneil/machinepack-math)
+## Installation &nbsp; [![NPM version](https://badge.fury.io/js/machinepack-math.svg)](http://badge.fury.io/js/machinepack-math) [![Build Status](https://travis-ci.org/treelinehq/machinepack-math.png?branch=master)](https://travis-ci.org/treelinehq/machinepack-math)
 
 ```sh
 $ npm install machinepack-math
