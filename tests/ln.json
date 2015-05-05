@@ -1,0 +1,30 @@
+{
+  "machine": "ln",
+  "expectations": [
+    {
+      "todo": true,
+      "using": {},
+      "outcome": "success"
+    },
+    {
+      "using": {
+        "number": "1"
+      },
+      "outcome": "success",
+      "returns": "0"
+    },
+    {
+      "using": {
+        "number": "2.7"
+      },
+      "outcome": "success",
+      "returns": "0.9932517730102834"
+    },
+    {
+      "using": {
+        "number": "-1"
+      },
+      "outcome": "notDefined"
+    }
+  ]
+}
