@@ -32,7 +32,8 @@
       "sqrt",
       "pi",
       "pow",
-      "ln"
+      "ln",
+      "log"
     ],
     "testsUrl": "https://travis-ci.org/"
   },

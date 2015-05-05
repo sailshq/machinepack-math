@@ -30,8 +30,8 @@ module.exports = {
 
   exits: {
 
-    notDefined: {
-      description: 'Cannot take the logarithm of a negative number.'
+    invalidLog: {
+      description: 'Cannot calculate the logarithm of a number <=0.'
     },
 
     success: {
@@ -44,8 +44,8 @@ module.exports = {
 
   fn: function (inputs,exits) {
 
-    if (inputs.number < 0) {
-      return exits.notDefined();
+    if (inputs.number <= 0) {
+      return exits.invalidLog();
     }
     return exits.success(Math.log(inputs.number));
   },

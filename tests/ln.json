@@ -19,12 +19,6 @@
       },
       "outcome": "success",
       "returns": "0.9932517730102834"
-    },
-    {
-      "using": {
-        "number": "-1"
-      },
-      "outcome": "notDefined"
     }
   ]
 }
