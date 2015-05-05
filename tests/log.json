@@ -1,0 +1,88 @@
+{
+  "machine": "log",
+  "expectations": [
+    {
+      "todo": true,
+      "using": {},
+      "outcome": "success"
+    },
+    {
+      "using": {
+        "number": "100"
+      },
+      "outcome": "success",
+      "returns": "2"
+    },
+    {
+      "using": {
+        "number": "1"
+      },
+      "outcome": "success",
+      "returns": "0"
+    },
+    {
+      "using": {
+        "number": "0.5"
+      },
+      "outcome": "success",
+      "returns": "-0.30102999566398114"
+    },
+    {
+      "using": {
+        "number": "-0.5"
+      },
+      "outcome": "invalidLog"
+    },
+    {
+      "using": {
+        "number": "0"
+      },
+      "outcome": "invalidLog"
+    },
+    {
+      "using": {
+        "number": "100",
+        "base": "10"
+      },
+      "outcome": "success",
+      "returns": "2"
+    },
+    {
+      "using": {
+        "number": "100",
+        "base": "100"
+      },
+      "outcome": "success",
+      "returns": "1"
+    },
+    {
+      "using": {
+        "number": "100",
+        "base": "0.5"
+      },
+      "outcome": "success",
+      "returns": "-6.643856189774725"
+    },
+    {
+      "using": {
+        "number": "100",
+        "base": "1"
+      },
+      "outcome": "invalidBase"
+    },
+    {
+      "using": {
+        "number": "100",
+        "base": "0"
+      },
+      "outcome": "invalidBase"
+    },
+    {
+      "using": {
+        "number": "100",
+        "base": "-1"
+      },
+      "outcome": "invalidBase"
+    }
+  ]
+}
