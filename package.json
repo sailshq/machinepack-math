@@ -27,12 +27,15 @@
       "subtract",
       "multiply",
       "parse",
-      "random"
+      "random",
+      "e",
+      "sqrt",
+      "pi"
     ],
     "testsUrl": "https://travis-ci.org/"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:treelinehq/machinepack-math.git"
   }
 }
