@@ -1,6 +1,6 @@
 module.exports = {
 
-
+  // TODO: move to mp-numbers (for consistency w/ lodash)
   friendlyName: 'Parse number',
 
 
