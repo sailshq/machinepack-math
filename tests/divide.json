@@ -7,7 +7,7 @@
         "b": "2"
       },
       "outcome": "success",
-      "returns": "5"
+      "returns": 5
     },
     {
       "using": {
@@ -15,7 +15,7 @@
         "b": "2"
       },
       "outcome": "success",
-      "returns": "2.5"
+      "returns": 2.5
     },
     {
       "using": {
@@ -23,7 +23,7 @@
         "b": "22392359239235923"
       },
       "outcome": "success",
-      "returns": "2.481005011863845e-8"
+      "returns": 2.481005011863845e-8
     },
     {
       "using": {
@@ -36,6 +36,13 @@
       "using": {
         "a": "0",
         "b": "0"
+      },
+      "outcome": "invalidDenominator"
+    },
+    {
+      "using": {
+        "a": 5,
+        "b": 0
       },
       "outcome": "invalidDenominator"
     }

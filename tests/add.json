@@ -7,7 +7,7 @@
         "b": "1"
       },
       "outcome": "success",
-      "returns": "2"
+      "returns": 2
     },
     {
       "using": {
@@ -15,7 +15,7 @@
         "b": "1.5"
       },
       "outcome": "success",
-      "returns": "2.5"
+      "returns": 2.5
     },
     {
       "using": {
@@ -23,7 +23,15 @@
         "b": "-1.5001"
       },
       "outcome": "success",
-      "returns": "-0.5001"
+      "returns": -0.5001
+    },
+    {
+      "using": {
+        "a": 1,
+        "b": 2
+      },
+      "outcome": "success",
+      "returns": 3
     }
   ]
 }

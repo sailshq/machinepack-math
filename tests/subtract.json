@@ -2,17 +2,12 @@
   "machine": "subtract",
   "expectations": [
     {
-      "todo": true,
-      "using": {},
-      "outcome": "success"
-    },
-    {
       "using": {
         "a": "10",
         "b": "2"
       },
       "outcome": "success",
-      "returns": "8"
+      "returns": 8
     },
     {
       "using": {
@@ -20,7 +15,7 @@
         "b": "-2"
       },
       "outcome": "success",
-      "returns": "12"
+      "returns": 12
     },
     {
       "using": {
@@ -28,7 +23,7 @@
         "b": "-2"
       },
       "outcome": "success",
-      "returns": "-8"
+      "returns": -8
     }
   ]
 }

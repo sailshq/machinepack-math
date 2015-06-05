@@ -4,7 +4,7 @@
     {
       "using": {},
       "outcome": "success",
-      "returns": "3.141592653589793"
+      "returns": 3.141592653589793
     }
   ]
 }

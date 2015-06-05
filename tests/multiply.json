@@ -2,17 +2,12 @@
   "machine": "multiply",
   "expectations": [
     {
-      "todo": true,
-      "using": {},
-      "outcome": "success"
-    },
-    {
       "using": {
         "a": "1",
         "b": "1"
       },
       "outcome": "success",
-      "returns": "1"
+      "returns": 1
     },
     {
       "using": {
@@ -20,7 +15,7 @@
         "b": "0"
       },
       "outcome": "success",
-      "returns": "0"
+      "returns": 0
     },
     {
       "using": {
@@ -28,7 +23,7 @@
         "b": "1000"
       },
       "outcome": "success",
-      "returns": "-1000"
+      "returns": -1000
     }
   ]
 }
