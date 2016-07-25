@@ -13,21 +13,21 @@ module.exports = {
   sync: true,
 
 
-  cacheable: true,
+  sideEffects: 'cacheable',
 
 
   inputs: {
 
     a: {
       friendlyName: 'Numerator (first number)',
-      description: 'The number to divide (aka "dividend")',
+      description: 'The number to divide (aka "dividend").',
       example: 5,
       required: true
     },
 
     b: {
       friendlyName: 'Denominator (second number)',
-      description: 'The number to divide by (aka "divisor")',
+      description: 'The number to divide by (aka "divisor").',
       example: -2,
       required: true
     }
@@ -37,17 +37,16 @@ module.exports = {
 
   exits: {
 
+    success: {
+      outputFriendlyName: 'Quotient',
+      outputDescription: 'The value obtained by dividing input `a` by input `b`.',
+      outputExample: -2.5
+    },
+
     invalidDenominator: {
-      friendlyName: 'invalid denominator',
       description: 'The denominator was provided as 0, but computers haven\'t learned how to divide by zero (yet).'
     },
 
-    success: {
-      friendlyName: 'then',
-      description: 'Returns the quotient (numerator ÷ denominator)',
-      variableName: 'quotient',
-      example: -2.5
-    }
 
   },
 

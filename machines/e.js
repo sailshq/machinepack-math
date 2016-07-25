@@ -4,16 +4,13 @@ module.exports = {
   friendlyName: 'E',
 
 
-  description: 'Get the value of E (the mathematical constant)',
+  description: 'Get the value of E (the mathematical constant).',
 
 
-  cacheable: true,
+  sideEffects: 'idempotent',
 
 
   sync: true,
-
-
-  idempotent: true,
 
 
   inputs: {
@@ -24,8 +21,9 @@ module.exports = {
   exits: {
 
     success: {
-      variableName: 'E',
-      example: 2.718281828459045
+      outputFriendlyName: 'E',
+      outputDescription: 'The mathematical constant `e`.',
+      outputExample: 2.718281828459045
     },
 
   },

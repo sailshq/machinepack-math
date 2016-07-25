@@ -10,7 +10,7 @@ module.exports = {
   sync: true,
 
 
-  cacheable: true,
+  sideEffects: 'cacheable',
 
 
   inputs: {
@@ -35,9 +35,9 @@ module.exports = {
   exits: {
 
     success: {
-      description: 'Returns the product (a ✕ b)',
-      variableName: 'product',
-      example: -20
+      outputDescription: 'The result of multiplying inputs `a` and `b`.',
+      outputFriendlyName: 'Product',
+      outputExample: -20
     }
 
   },

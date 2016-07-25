@@ -13,13 +13,12 @@ module.exports = {
   sync: true,
 
 
-  cacheable: true,
+  sideEffects: 'cacheable',
 
 
   inputs: {
 
     string: {
-      friendlyName: 'String',
       description: 'The string to parse.',
       example: '5',
       required: true
@@ -30,14 +29,15 @@ module.exports = {
 
   exits: {
 
-    notANumber: {
-      description: 'The provided string cannot be converted into a number.'
+    success: {
+      outputFriendlyName: 'Number',
+      outputDescription: 'The value obtained from converting the input string to a number.',
+      outputExample: 5
     },
 
-    success: {
-      description: 'Done.',
-      example: 5
-    }
+    notANumber: {
+      description: 'The provided string could not be converted into a number.'
+    },
 
   },
 

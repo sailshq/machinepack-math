@@ -13,16 +13,16 @@ module.exports = {
   inputs: {
 
     min: {
-      friendlyName: 'At least (>=)',
+      friendlyName: 'Minimum value (>=)',
       example: 1,
-      description: 'The minimum acceptable number to generate',
+      description: 'The minimum acceptable number to generate.',
       defaultsTo: 0
     },
 
     max: {
-      friendlyName: 'No greater than (<=)',
+      friendlyName: 'Maximum value (<=)',
       example: 1,
-      description: 'The maximum acceptable number to generate',
+      description: 'The maximum acceptable number to generate.',
       defaultsTo: 1
     },
 
@@ -39,9 +39,9 @@ module.exports = {
   exits: {
 
     success: {
-      example: 1,
-      variableName: 'randomNum',
-      description: 'OK.'
+      outputExample: 1,
+      outputFriendlyName: 'Random number',
+      outputDescription: 'A randomly generated number.'
     }
 
   },

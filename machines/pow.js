@@ -7,26 +7,21 @@ module.exports = {
   description: 'Raise a number to a power.',
 
 
-  cacheable: true,
+  sideEffects: 'idempotent',
 
 
   sync: true,
 
 
-  idempotent: true,
-
-
   inputs: {
 
     number: {
-      friendlyName: 'Number',
       description: 'The number to raise to a power.',
       example: 8,
       required: true
     },
 
     exponent: {
-      friendlyName: 'Exponent',
       description: 'The exponent to raise the other number to.',
       example: 2,
       required: true
@@ -37,18 +32,18 @@ module.exports = {
 
   exits: {
 
-    imaginary: {
-      friendlyName: 'imaginary',
-      variableName: 'imaginaryFactor',
-      example: 8,
-      description: 'Returns a number which, if multiplied by √-1, would represent the number raised to the specified fractional power.',
-      extendedDescription: 'Cannot calculate a real result for a negative number raised to a fractional exponent.'
+    success: {
+      outputExample: 64,
+      outputFriendlyName: 'Exponential result',
+      outputDescription: 'The value obtained by raising the input number to the specified power.'
     },
 
-    success: {
-      example: 64,
-      variableName: 'result'
-    }
+    imaginary: {
+      outputFriendlyName: 'Imaginary factor',
+      outputExample: 8,
+      outputDescription: 'The number which, if multiplied by √-1, would represent the number raised to the specified fractional power.',
+      description: 'Could not calculate a real result for a negative number raised to a fractional exponent.'
+    },
 
   },
 

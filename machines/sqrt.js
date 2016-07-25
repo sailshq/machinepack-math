@@ -7,19 +7,15 @@ module.exports = {
   description: 'Calculate the square root of a number.',
 
 
-  cacheable: true,
+  sideEffects: 'idempotent',
 
 
   sync: true,
 
 
-  idempotent: true,
-
-
   inputs: {
 
     number: {
-      friendlyName: 'Number',
       description: 'The number to take the square root of.',
       example: 64,
       required: true
@@ -30,18 +26,18 @@ module.exports = {
 
   exits: {
 
-    imaginary: {
-      friendlyName: 'imaginary',
-      variableName: 'imaginaryFactor',
-      example: 8,
-      description: 'Returns a number which, if multiplied by √-1, would represent the √ of the provided number.',
-      extendedDescription: 'Cannot calculate a real result for the square root of a negative number.'
+    success: {
+      outputExample: 8,
+      outputFriendlyName: 'Square root',
+      outputDescription: 'The principal square root of the input number.'
     },
 
-    success: {
-      example: 8,
-      variableName: 'factor'
-    }
+    imaginary: {
+      outputFriendlyName: 'Imaginary square root',
+      outputExample: 8,
+      outputDescription: 'A number which, if multiplied by the square root of -1, would represent the square root of the input number.',
+      description: 'Could not calculate a real result for the square root because the input was a negative number.'
+    },
 
   },
 

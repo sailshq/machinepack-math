@@ -10,7 +10,7 @@ module.exports = {
   sync: true,
 
 
-  cacheable: true,
+  sideEffects: 'cacheable',
 
 
   inputs: {
@@ -35,9 +35,9 @@ module.exports = {
   exits: {
 
     success: {
-      description: 'Returns the difference (a - b)',
-      variableName: 'difference',
-      example: -22.2
+      outputDescription: 'The value obtained by subtracting input `b` from input `a`.',
+      outputFriendlyName: 'Difference',
+      outputExample: -22.2
     }
 
   },

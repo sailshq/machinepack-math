@@ -7,27 +7,22 @@ module.exports = {
   description: 'Calculate the logarithm of a number at a particular base.',
 
 
-  cacheable: true,
+  sideEffects: 'idempotent',
 
 
   sync: true,
 
 
-  idempotent: true,
-
-
   inputs: {
 
     number: {
-      friendlyName: 'Number',
       description: 'The number to calculate the log of.',
       example: 100,
       required: true
     },
 
     base: {
-      friendlyName: 'Base',
-      description: 'The base of the logarithm',
+      description: 'The base of the logarithm.',
       example: 10,
       defaultsTo: 10
     }
@@ -37,18 +32,20 @@ module.exports = {
 
   exits: {
 
+    success: {
+      outputExample: 2,
+      outputFriendlyName: 'Logarithm',
+      outputDescription: 'The logarithm of the input value.'
+    },
+
     invalidLog: {
-      description: 'Cannot calculate the logarithm of a number <=0.'
+      friendlyName: 'Invalid input value',
+      description: 'Could not calculate the logarithm of the input number (because the input was a negative number).'
     },
 
     invalidBase: {
-      description: 'A logarithm\'s base must be >0 and !=1.'
+      description: 'The `base` value was invalid (it must be a positive number and not 1).'
     },
-
-    success: {
-      example: 2,
-      variableName: 'logarithm'
-    }
 
   },
 

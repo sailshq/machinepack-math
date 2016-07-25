@@ -10,7 +10,7 @@ module.exports = {
   sync: true,
 
 
-  cacheable: true,
+  sideEffects: 'cacheable',
 
 
   inputs: {
@@ -34,9 +34,9 @@ module.exports = {
   exits: {
 
     success: {
-      description: 'Returns the sum (a + b)',
-      variableName: 'sum',
-      example: 4.2
+      outputFriendlyName: 'Sum',
+      outputDescription: 'The sum of the two inputs.',
+      outputExample: 4.2
     }
 
   },

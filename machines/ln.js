@@ -7,19 +7,15 @@ module.exports = {
   description: 'Calculate the natural logarithm of a number.',
 
 
-  cacheable: true,
+  sideEffects: 'idempotent',
 
 
   sync: true,
 
 
-  idempotent: true,
-
-
   inputs: {
 
     number: {
-      friendlyName: 'Number',
       description: 'The number to calculate the natural log of.',
       example: 2.718281828459045,
       required: true
@@ -30,14 +26,16 @@ module.exports = {
 
   exits: {
 
-    invalidLog: {
-      description: 'Cannot calculate the logarithm of a number <=0.'
+    success: {
+      outputExample: 1,
+      outputFriendlyName: 'Natural logarithm',
+      outputDescription: 'The natural logarithm of the input number.'
     },
 
-    success: {
-      example: 1,
-      variableName: 'logarithm'
-    }
+    invalidLog: {
+      friendlyName: 'Invalid input value',
+      description: 'Could not calculate the natural logarithm of the input number (because the input was a negative number).'
+    },
 
   },
 

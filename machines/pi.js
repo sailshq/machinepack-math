@@ -4,16 +4,13 @@ module.exports = {
   friendlyName: 'Pi (π)',
 
 
-  description: 'Get the value of π (the mathematical constant)',
+  description: 'Get the value of π (the mathematical constant).',
 
 
-  cacheable: true,
+  sideEffects: 'idempotent',
 
 
   sync: true,
-
-
-  idempotent: true,
 
 
   inputs: {
@@ -24,8 +21,9 @@ module.exports = {
   exits: {
 
     success: {
-      variableName: 'π',
-      example: 3.141592653589793
+      outputFriendlyName: 'Pi (π)',
+      outputDescription: 'The mathematical constant pi (π).',
+      outputExample: 3.141592653589793
     },
 
   },
