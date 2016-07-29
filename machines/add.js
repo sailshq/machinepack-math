@@ -43,7 +43,11 @@ module.exports = {
 
 
   fn: function(inputs, exits) {
+
+    // Add the two input numbers and return the result
+    // through the `success` exit.
     return exits.success(inputs.a + inputs.b);
+
   }
 
 

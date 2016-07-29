@@ -40,7 +40,9 @@
       "pi",
       "pow",
       "ln",
-      "log"
+      "log",
+      "ceil",
+      "floor"
     ],
     "testsUrl": "https://travis-ci.org/"
   },
