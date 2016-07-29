@@ -44,6 +44,9 @@ module.exports = {
 
 
   fn: function(inputs, exits) {
+
+    // Subtract input `b` from input `a` and return the result
+    // through the `success` exit.
     return exits.success(inputs.a - inputs.b);
   }
 

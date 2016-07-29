@@ -42,10 +42,15 @@ module.exports = {
 
   fn: function (inputs,exits) {
 
+    // If the input is negative, return through the `invalidLog` exit.
     if (inputs.number <= 0) {
       return exits.invalidLog();
     }
+
+    // Calculate the natural log of the input number and return it
+    // through the `success` exit.
     return exits.success(Math.log(inputs.number));
+
   },
 
 

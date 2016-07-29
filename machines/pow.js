@@ -42,7 +42,7 @@ module.exports = {
       outputFriendlyName: 'Imaginary factor',
       outputExample: 8,
       outputDescription: 'The number which, if multiplied by √-1, would represent the number raised to the specified fractional power.',
-      description: 'Could not calculate a real result for a negative number raised to a fractional exponent.'
+      description: 'Could not calculate a real result for a negative number raised to a fractional exponent, so an imaginary result was returned instead.'
     },
 
   },
@@ -53,9 +53,14 @@ module.exports = {
     // If the number is negative, and it's being raised to a
     // fractional power, we'll calculate the imaginary factor instead.
     if (inputs.number < 0 && Math.floor(inputs.exponent) !== inputs.exponent) {
+      // Return the imaginary factor through the `imaginary` exit.
       return exits.imaginary(Math.pow(-1*inputs.number, inputs.exponent));
     }
+
+    // Otherwise raise the number to the specified power and return the result
+    // through the `success` exit.
     return exits.success(Math.pow(inputs.number, inputs.exponent));
+
   },
 
 

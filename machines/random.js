@@ -56,13 +56,16 @@ module.exports = {
     // enabling floating-point results. (because by default, _.random()
     // will understand floating-point `min` or `max`, indicating a license
     // to make the result floating-point, which we've decided to make more
-    // explicit here.)
+    // explicit here).
     if (!inputs.floating) {
       inputs.min = Math.floor(inputs.min);
       inputs.max = Math.floor(inputs.max);
     }
 
+    // Generate a random number using the given constraints.
     var result = _.random(inputs.min, inputs.max, inputs.floating);
+
+    // Return the number through the `success` exit.
     return exits.success(result);
   }
 

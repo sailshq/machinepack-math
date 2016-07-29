@@ -52,9 +52,14 @@ module.exports = {
 
 
   fn: function(inputs, exits) {
+
+    // If the denominator is zero, return through the `invalidDenominator` exit.
     if (inputs.b === 0) {
       return exits.invalidDenominator();
     }
+
+    // Divide the input `a` by input `b` and return the result
+    // through the `success` exit.
     return exits.success(inputs.a / inputs.b);
   }
 

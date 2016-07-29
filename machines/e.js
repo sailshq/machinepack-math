@@ -7,7 +7,7 @@ module.exports = {
   description: 'Get the value of E (the mathematical constant).',
 
 
-  sideEffects: 'idempotent',
+  sideEffects: 'cacheable',
 
 
   sync: true,
@@ -30,7 +30,10 @@ module.exports = {
 
 
   fn: function (inputs,exits) {
+
+    // Return the constant `E` through the success exit.
     return exits.success(Math.E);
+
   },
 
 

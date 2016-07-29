@@ -7,7 +7,7 @@ module.exports = {
   description: 'Get the value of π (the mathematical constant).',
 
 
-  sideEffects: 'idempotent',
+  sideEffects: 'cacheable',
 
 
   sync: true,
@@ -30,7 +30,10 @@ module.exports = {
 
 
   fn: function (inputs,exits) {
+
+    // Return the constant `PI` through the `success` exit.
     return exits.success(Math.PI);
+
   },
 
 
