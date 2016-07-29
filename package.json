@@ -45,7 +45,9 @@
       "floor",
       "sum",
       "avg",
-      "median"
+      "median",
+      "min",
+      "max"
     ],
     "testsUrl": "https://travis-ci.org/"
   },
