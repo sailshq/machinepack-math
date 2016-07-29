@@ -42,7 +42,9 @@
       "ln",
       "log",
       "ceil",
-      "floor"
+      "floor",
+      "sum",
+      "avg"
     ],
     "testsUrl": "https://travis-ci.org/"
   },
