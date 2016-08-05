@@ -38,11 +38,6 @@ module.exports = {
       outputFriendlyName: 'Rounded number',
       outputDescription: 'The input number rounded to the specified number of decimal places.',
       outputExample: 124
-    },
-
-    invalidPrecision: {
-      description: 'The specified number of decimal places was invalid.',
-      extendedDescription: 'Only non-negative integers may be used to specify the number of decimal places to round.'
     }
 
   },
@@ -55,7 +50,7 @@ module.exports = {
 
     // If the precision is negative or not a whole number, return through the `invalidPrecision` exit.
     if (inputs.precision < 0 || (Math.floor(inputs.precision) !== inputs.precision)) {
-      return exits.invalidPrecision();
+      return exits.error(new Error('The specified number of decimal places was invalid.'));
     }
 
     // Calculate the ceiling of the input number to the specified precision

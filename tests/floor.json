@@ -36,14 +36,14 @@
         "number": 123.99,
         "precision": 1.5
       },
-      "outcome": "invalidPrecision"
+      "outcome": "error"
     },
     {
       "using": {
         "number": 123.99,
         "precision": -1
       },
-      "outcome": "invalidPrecision"
+      "outcome": "error"
     }
   ]
 }

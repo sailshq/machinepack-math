@@ -19,7 +19,7 @@
       "using": {
         "number": "0"
       },
-      "outcome": "invalidLog"
+      "outcome": "error"
     },
     {
       "using": {
@@ -32,13 +32,13 @@
       "using": {
         "number": "-1"
       },
-      "outcome": "invalidLog"
+      "outcome": "error"
     },
     {
       "using": {
         "number": "-1.5"
       },
-      "outcome": "invalidLog"
+      "outcome": "error"
     }
   ]
 }

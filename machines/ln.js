@@ -30,12 +30,7 @@ module.exports = {
       outputExample: 1,
       outputFriendlyName: 'Natural logarithm',
       outputDescription: 'The natural logarithm of the input number.'
-    },
-
-    invalidLog: {
-      friendlyName: 'Invalid input value',
-      description: 'Could not calculate the natural logarithm of the input number (because the input was a negative number).'
-    },
+    }
 
   },
 
@@ -44,7 +39,7 @@ module.exports = {
 
     // If the input is negative, return through the `invalidLog` exit.
     if (inputs.number <= 0) {
-      return exits.invalidLog();
+      return exits.error(new Error('Could not calculate the natural logarithm of the input number (because the input was a negative number).'));
     }
 
     // Calculate the natural log of the input number and return it
