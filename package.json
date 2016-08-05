@@ -48,7 +48,8 @@
       "median",
       "min",
       "max",
-      "round"
+      "round",
+      "abs"
     ],
     "testsUrl": "https://travis-ci.org/"
   },
