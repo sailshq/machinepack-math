@@ -7,7 +7,7 @@ module.exports = {
   description: 'Calculate the natural logarithm of a number.',
 
 
-  sideEffects: 'idempotent',
+  sideEffects: 'cacheable',
 
 
   sync: true,

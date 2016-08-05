@@ -7,6 +7,12 @@ module.exports = {
   description: 'Get the value of E (the mathematical constant).',
 
 
+  extendedDescription: 'Returns the value of Euler\'s number, which is the base of the natural logarithm.',
+
+
+  moreInfoUrl: 'https://en.wikipedia.org/wiki/E_(mathematical_constant)',
+
+
   sideEffects: 'cacheable',
 
 

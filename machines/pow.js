@@ -7,7 +7,7 @@ module.exports = {
   description: 'Raise a number to a power.',
 
 
-  sideEffects: 'idempotent',
+  sideEffects: 'cacheable',
 
 
   sync: true,

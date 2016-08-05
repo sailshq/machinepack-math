@@ -17,11 +17,13 @@ module.exports = {
 
 
   inputs: {
+
     number: {
       description: 'The number to round.',
       example: 123.01,
       required: true
     },
+
     precision: {
       friendlyName:'Number of decimal places',
       description: 'The number of decimal places to round.',
@@ -29,6 +31,7 @@ module.exports = {
       example: 0,
       defaultsTo: 0
     }
+
   },
 
 

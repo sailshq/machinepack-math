@@ -7,7 +7,7 @@ module.exports = {
   description: 'Calculate the logarithm of a number at a particular base.',
 
 
-  sideEffects: 'idempotent',
+  sideEffects: 'cacheable',
 
 
   sync: true,

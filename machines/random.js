@@ -10,6 +10,9 @@ module.exports = {
   sync: true,
 
 
+  sideEffects: 'idempotent',
+
+
   inputs: {
 
     min: {

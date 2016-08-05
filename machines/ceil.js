@@ -22,6 +22,7 @@ module.exports = {
       example: 123.01,
       required: true
     },
+
     precision: {
       friendlyName:'Number of decimal places',
       description: 'The number of decimal places to round up.',
@@ -29,6 +30,7 @@ module.exports = {
       example: 0,
       defaultsTo: 0
     }
+
   },
 
 
