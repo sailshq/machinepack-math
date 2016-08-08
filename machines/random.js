@@ -10,7 +10,7 @@ module.exports = {
   sync: true,
 
 
-  sideEffects: 'idempotent',
+  sideEffects: 'cacheable',
 
 
   inputs: {

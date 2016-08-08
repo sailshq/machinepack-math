@@ -7,7 +7,7 @@ module.exports = {
   description: 'Calculate the square root of a number.',
 
 
-  sideEffects: 'idempotent',
+  sideEffects: 'cacheable',
 
 
   sync: true,
