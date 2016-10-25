@@ -49,7 +49,8 @@
       "min",
       "max",
       "round",
-      "abs"
+      "abs",
+      "mod"
     ],
     "testsUrl": "https://travis-ci.org/"
   },
